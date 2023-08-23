@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/main.js"></script>
   <title>Desarolladores ISI</title>
 </head>
 <body>
 
   <header>
 
-    <img id="logo" src="./img/logo.png" title="Logo app">
+    <a id="logo" onclick="mostrarMensajeInicial()">
+      <img src="./img/logo.png" title="Logo app">
+    </a>
 
     <nav>
 
@@ -24,7 +27,9 @@
 
     </nav>
 
-    <img id="contacto" src="./img/call-us.png" title="Contactanos">
+    <a id="contacto" href="#footer">
+      <img src="./img/call-us.png" title="Contactanos">
+    </a>
 
   </header>
 
@@ -82,11 +87,17 @@
 
   </main>
 
-  <footer>
+  <footer id="footer">
     <h1>Formulario de contactos</h1>
     <h3>Contactis adicionales | Redes sociales</h3>
     <p>Desarrollares e inmobiliarios ISI &copy; 2023</p>
   </footer>
+
+  <button class="btn-ir-arriba" >
+    <svg viewBox="0 0 24 24">
+      <path d="m4 16 8-8 8 8"></path>
+    </svg>
+  </button>
 
 </body>
 </html>

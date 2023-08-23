@@ -1,3 +1,9 @@
+/* DEFINIMOS TEMPORALEMNTE PALETA DE COLORES, QUITAR ESTA SECCION AL FINAL */
+#PALETA_DE_COLORES {
+  color: #34495e #3498db #5fbaa7 #f5f7fa #ffffff;
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -22,6 +28,22 @@ header {
 
   position: fixed;
   width: 100%;
+
+  box-shadow: 0 6px 8px rgba(0,0,0, 0.10);
+}
+
+#logo,
+#contacto {
+  height: 55px;
+  width: 55px;
+
+  display: flex;
+}
+
+#logo,
+#contacto > img {
+  width: auto;
+  padding: 5px;
 }
 
 nav {
@@ -48,11 +70,46 @@ nav a {
   font-weight: 600;
 }
 
+nav li:hover,
+#contacto:hover {
+  background-color: #f5f7fa;
+  border-radius: 8px;
+}
+
+section {
+  height: 100vh;
+  scroll-margin-top:  90px;
+  padding: 45px 90px;
+  border: 1px dashed #34495e;
+}
+
 #home {
   background: #34495e;
 }
 
-#logo, #contacto {
-  height: 55px;
-  width: auto;
+footer {
+  background: #34495e;
+  height: 50vh;
+}
+
+.btn-ir-arriba {
+  cursor: pointer;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: #34495e;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-ir-arriba svg {
+  stroke: white;
+  stroke-width: 3px;
+  width: 25px;
+  fill: none;
 }
