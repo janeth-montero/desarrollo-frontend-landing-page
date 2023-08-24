@@ -15,6 +15,10 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
+  font-weight: 400;
+
+  background-color: #f5f7fa;
+  color: #000000;
 }
 
 header {
@@ -23,21 +27,20 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  height: 90px;
   background: white;
 
   position: fixed;
   width: 100%;
-
+  height: 90px;
   box-shadow: 0 6px 8px rgba(0,0,0, 0.10);
 }
 
 #logo,
 #contacto {
+  display: flex;
   height: 55px;
   width: 55px;
-
-  display: flex;
+  margin: 10px;
 }
 
 #logo,
@@ -77,39 +80,81 @@ nav li:hover,
 }
 
 section {
-  height: 100vh;
   scroll-margin-top:  90px;
   padding: 45px 90px;
+
+  /* tmp: para visualizar secciones */
+  height: 100vh;
   border: 1px dashed #34495e;
 }
 
+section > h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #34495e;
+
+  border-bottom: 5px solid #34495e;
+  margin-bottom: 2rem;
+}
+
 #home {
-  background: #34495e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url("../img/home.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  color: white;
+
+  height: 100vh;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #34495e;
+  opacity: 0.9;
+  padding: 3rem;
 }
 
 footer {
-  background: #34495e;
+  background: #3498db;
   height: 50vh;
 }
 
-.btn-ir-arriba {
+#btn-ir-arriba {
+  display: none;
   cursor: pointer;
 
   position: fixed;
   bottom: 20px;
   right: 20px;
 
-  background: #34495e;
+  background: hsl(210, 29%, 29%);
   color: white;
   height: 50px;
   width: 50px;
   border-radius: 25px;
   border: none;
+
+  box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
+  transition: 300ms ease;
 }
 
-.btn-ir-arriba svg {
-  stroke: white;
-  stroke-width: 3px;
+#btn-ir-arriba:hover {
+  background: hsl(210, 29%, 24%);
+  transform: translateY(-0.5rem);
+}
+
+#btn-ir-arriba svg {
   width: 25px;
   fill: none;
+  stroke: white;
+  stroke-width: 3px;
 }
