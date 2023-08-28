@@ -21,6 +21,9 @@ body {
   color: #000000;
 }
 
+
+/* #region HEADER */
+
 header {
   display: flex;
   flex-direction: row;
@@ -33,6 +36,8 @@ header {
   width: 100%;
   height: 90px;
   box-shadow: 0 6px 8px rgba(0,0,0, 0.10);
+
+  z-index: 1;
 }
 
 #logo,
@@ -79,11 +84,19 @@ nav li:hover,
   border-radius: 8px;
 }
 
+/* #endregion */
+
+
+/* #region SECCIONES EN GENERAL */
+
 section {
   scroll-margin-top:  90px;
   padding: 45px 90px;
+}
 
-  /* tmp: para visualizar secciones */
+/* tmp: en lo que se termina el resto de las secciones,
+        para visualizar secciones  */
+section:not(#destacados) {
   height: 100vh;
   border: 1px dashed #34495e;
 }
@@ -96,6 +109,11 @@ section > h1 {
   border-bottom: 5px solid #34495e;
   margin-bottom: 2rem;
 }
+
+/* #endregion */
+
+
+/* #region HOME */
 
 #home {
   display: flex;
@@ -123,10 +141,81 @@ section > h1 {
   padding: 3rem;
 }
 
+/* #endregion */
+
+
+/* #region DESTACADOS */
+
+.destacados-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 60px;
+}
+
+.destacado-info {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+  border-radius: 3px;
+}
+
+.destacado-info img {
+  max-width: 100%;
+}
+
+.star-rating {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+.clientes-comentarios {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comentario {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: hsl(167, 40%, 85%);
+  border-radius: 8px;
+}
+
+.cliente img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.cliente-mensaje {
+  flex: 1;
+  margin-bottom: 0.75rem;
+}
+
+.cliente-firma {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* #endregion */
+
+
+/* #region FOOTER */
+
 footer {
   background: #3498db;
   height: 50vh;
 }
+
+/* #endregion */
+
+
+/* #region BOTON IR ARRIBA */
 
 #btn-ir-arriba {
   display: none;
@@ -158,3 +247,5 @@ footer {
   stroke: white;
   stroke-width: 3px;
 }
+
+/* #endregion */
