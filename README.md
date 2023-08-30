@@ -1,6 +1,8 @@
-# Residencial CasasFicticias Landing Page
+# Beta Residencial Landing Page
 
-Bienvenido al repositorio de la landing page de Beta Residencial de desarrollos ISI. Esta página es un proyecto ficticio desarrollado en HTML, CSS y Javascript como parte de la clase de Desarrollo de Frontend.
+Bienvenido al repositorio de la landing page de Beta Residencial de desarrollos ISI.
+Esta página es un proyecto ficticio desarrollado en HTML, CSS y Javascript como parte de la clase de Desarrollo de Frontend.
+Este proyecto se encuentra en desarrollo, por lo cual la documentacion presentada a continuacion puede describir funcionalidad incompleta o en proceso de desarrollo.
 
 ## Instrucciones de Uso
 
@@ -28,7 +30,7 @@ live-server
 
 ## Características
 
-- Navegación interactiva y efectos de desplazamiento suave.
+- Navegación interactiva por anclaje y efectos de desplazamiento suave.
 - Diseño atractivo y profesional con enfoque en la usabilidad.
 - Diseño responsive para adaptarse a diferentes dispositivos.
 
@@ -49,7 +51,7 @@ live-server
 
 ## Créditos
 
-- Imágenes tomadas de la red.
+- Imágenes tomadas de la red, crédito a quien corresponda.
 - Tipografía [Google Fonts](https://fonts.google.com/specimen/Inter?query=inter)
 - Iconos de navegación de [FontAwesome](https://fontawesome.com).
 
