@@ -1,6 +1,12 @@
+//
+// Impresion en consola simple
+//
 
 console.log('Hola mundo!');
 
+//
+// Funcion tradional
+//
 
 function mostrarMensajeInicial() {
 
@@ -26,7 +32,12 @@ function mostrarMensajeInicial() {
 //
 // () => 1 + 1;
 
+//
+// Evento de boton ir a arriba
+//
+
 document.addEventListener("DOMContentLoaded", () => {
+
   const scrollToBottomButtom = document.getElementById('btn-ir-arriba');
 
   window.addEventListener("scroll", () => {
@@ -35,12 +46,35 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       scrollToBottomButtom.style.display = 'none';
     }
-  })
+  });
 
   scrollToBottomButtom.addEventListener('click', () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  })
-})
+      // behavior: 'smooth'
+    });
+  });
+
+});
+
+//
+// Galeria de imagenes
+//
+
+const galeriaImagenes = document.querySelectorAll('.galeria-img');
+const overlay = document.querySelector('.galeria-overlay');
+const overlayImagen = document.querySelector('.galeria-overlay-img');
+
+galeriaImagenes.forEach(imagen => {
+
+  imagen.addEventListener('click', () => {
+    overlayImagen.src = imagen.src;
+    overlay.style.display = 'flex';
+  });
+
+});
+
+overlay.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  overlayImagen.src = '';
+});

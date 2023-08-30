@@ -277,6 +277,7 @@ button.btn:hover {
 
 
 /* #region GALERIA */
+
 .galeria-container {
   display: flex;
   justify-content: center;
@@ -288,7 +289,31 @@ button.btn:hover {
   padding: 1rem;
   margin: 1rem;
   cursor: pointer;
+  object-fit: cover;
 }
+
+.galeria-overlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.galeria-overlay-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
 /* #endregion */
 
 
