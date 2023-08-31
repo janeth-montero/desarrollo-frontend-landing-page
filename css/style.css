@@ -97,13 +97,6 @@ section {
   padding: 45px 90px;
 }
 
-/* tmp: en lo que se termina el resto de las secciones,
-        para visualizar secciones  */
-section:not(#destacados, #modelos, #galeria) {
-  height: 100vh;
-  border: 1px dashed #34495e;
-}
-
 section > h1 {
   text-transform: uppercase;
   font-size: 2rem;
@@ -115,6 +108,10 @@ section > h1 {
 
 section#modelos {
   background-image: linear-gradient(90deg, hsl(204, 70%, 63%), hsl(167, 40%, 65%));
+}
+
+section#ubicacion {
+  padding: 0;
 }
 
 /* #endregion */
@@ -252,7 +249,8 @@ section#modelos {
   color:#555
 }
 
-button.btn {
+button.btn,
+a.button-link {
   cursor: pointer;
 
   background-color: #34495e;
@@ -269,7 +267,15 @@ button.btn {
   transition: color 0.5s;
 }
 
-button.btn:hover {
+a.button-link {
+  display: inline;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+button.btn:hover,
+a.button-link:hover {
   background-color: #5fbaa7;
 }
 
@@ -312,6 +318,53 @@ button.btn:hover {
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
+}
+
+/* #endregion */
+
+
+/* #region UBICACION */
+
+.mapa-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: calc(100vh - 90px);
+  border: 0;
+}
+
+.mapa-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+  color: #000000;
+  font-size: 18px;
+}
+
+.direccion {
+  background-color: #f5f7fa;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.direccion h3 {
+  color:#34495e;
+  text-transform: uppercase;
 }
 
 /* #endregion */
