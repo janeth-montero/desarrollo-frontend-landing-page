@@ -373,8 +373,40 @@ a.button-link:hover {
 /* #region FOOTER */
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background: #3498db;
+  color:white;
+  text-align: center;
   height: 50vh;
+  padding: 6rem 3rem;
+}
+
+.contacto-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#contacto-form {
+  width: 600px;
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 8px;
+  border: 1px solid #f5f7fa;
+  border-radius: 3px;
 }
 
 /* #endregion */
