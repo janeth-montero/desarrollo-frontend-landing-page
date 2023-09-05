@@ -385,6 +385,11 @@ footer {
   padding: 6rem 3rem;
 }
 
+.contacto-container {
+  width: 600px;
+  max-width: 100%;
+}
+
 .contacto-container h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -407,6 +412,31 @@ textarea {
   padding: 8px;
   border: 1px solid #f5f7fa;
   border-radius: 3px;
+}
+
+/* #endregion */
+
+
+/* #region REDES SOCIALES */
+
+.redes-sociales-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+
+.fa-brands {
+  font-size: 2rem;
+  color: hsl(210, 29%, 29%);
+}
+
+.fa-brands:hover {
+  color: hsl(167, 40%, 55%);
+}
+
+.fa-brands:active {
+  color: hsl(167, 40%, 45%);
 }
 
 /* #endregion */
