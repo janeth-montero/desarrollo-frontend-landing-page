@@ -17,15 +17,15 @@
 </head>
 <body>
 
-  <header>
+  <header class="fx-row fx-content-space-between fx-align-items-center">
 
-    <a id="logo" onclick="mostrarMensajeInicial()">
+    <a id="logo" class="fx-row" onclick="mostrarMensajeInicial()">
       <img src="./img/logo.png" title="Logo app">
     </a>
 
-    <nav>
+    <nav class="fx-row xs-hide fx-align-items-center">
 
-      <ul>
+      <ul class="fx-row fx-content-space-between fx-align-items-center">
         <li><a href="#destacados">Destacados</a></li>
         <li><a href="#modelos">Modelos</a></li>
         <li><a href="#galeria">Amenidades</a></li>
@@ -34,7 +34,7 @@
 
     </nav>
 
-    <a id="contacto" href="#footer">
+    <a id="contacto" href="#footer" class="fx-row">
       <img src="./img/call-us.png" title="Contactanos">
     </a>
 
@@ -42,9 +42,9 @@
 
   <main>
 
-     <section id="home">
+     <section id="home" class="fx-column fx-content-center fx-align-items-center">
 
-      <div class="home-banner">
+      <div class="home-banner fx-column fx-content-center fx-align-items-center">
         <h1>Beta Residencial</h1>
         <h3>Bienvenidos a nuestro sitio de desarrollores ISI</h3>
         <p>Consequat nostrud nisi ut consequat magna id consectetur et minim ex proident cillum.</p>
@@ -54,7 +54,7 @@
     <section id="destacados">
       <h1>Destacados</h1>
 
-      <div class="destacados-container">
+      <div class="destacados-container fx-row fx-xs-column fx-content-space-between fx-align-items-center">
 
         <div class="destacado-info">
           <img src="./img/casas/modelo2.jpg" alt="Casa modelo 2">
@@ -70,9 +70,9 @@
           <p>Promociones actuales.</p>
         </div>
 
-        <div class="clientes-comentarios">
+        <div class="clientes-comentarios fx-column">
 
-          <div class="comentario">
+          <div class="comentario fx-row">
 
             <div class="cliente">
               <img src="./img/clientes/cliente1.jpg" alt="Cliente 1">
@@ -84,7 +84,7 @@
 
           </div>
 
-          <div class="comentario">
+          <div class="comentario fx-row">
 
             <div class="cliente">
               <img src="./img/clientes/cliente2.jpg" alt="Cliente 2">
@@ -96,7 +96,7 @@
 
           </div>
 
-          <div class="comentario">
+          <div class="comentario fx-row">
 
             <div class="cliente">
               <img src="./img/clientes/cliente3.jpg" alt="Cliente 3">
@@ -118,7 +118,7 @@
     <section id="modelos">
       <h1>Modelos de casas</h1>
 
-      <div class="card-container">
+      <div class="card-container fx-row fx-xs-column">
 
         <div class="card">
           <img src="./img/casas/modelo1.jpg" alt="Casa 1">
@@ -149,7 +149,7 @@
     <section id="galeria">
       <h1>Amenidades</h1>
 
-      <div class="galeria-container">
+      <div class="galeria-container fx-row fx-content-center">
         <img class="galeria-img" src="./img/amenidades/amenidades1.jpg" alt="Amenidades 1">
         <img class="galeria-img" src="./img/amenidades/amenidades2.jpg" alt="Amenidades 2">
         <img class="galeria-img" src="./img/amenidades/amenidades3.jpg" alt="Amenidades 3">
@@ -157,7 +157,7 @@
         <img class="galeria-img" src="./img/amenidades/amenidades5.jpg" alt="Amenidades 5">
       </div>
 
-      <div class="galeria-overlay">
+      <div class="galeria-overlay fx-content-center fx-align-items-center">
 
         <img src="" alt="Imagen ampliada" class="galeria-overlay-img">
 
@@ -176,9 +176,9 @@
 
         </iframe>
 
-        <div class="mapa-overlay">
+        <div class="mapa-overlay fx-row fx-align-items-center">
 
-          <div class="direccion">
+          <div class="direccion fx-column">
 
             <h3>Ubícanos</h3>
             <p>Blvd. Luis Encinas y Rosales S/N, Centro.</p>
@@ -198,13 +198,13 @@
 
   </main>
 
-  <footer id="footer">
+  <footer id="footer" class="fx-column fx-content-center fx-align-items-center">
 
     <div class="contacto-container">
 
       <h2>Contacto</h2>
 
-      <form id="contacto-form">
+      <form id="contacto-form" class="fx-column">
 
         <input type="text" id="nombre" placeholder="Nombre" required>
 
@@ -218,7 +218,7 @@
 
     </div>
 
-    <div class="redes-sociales-container">
+    <div class="redes-sociales-container fx-row">
 
       <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
