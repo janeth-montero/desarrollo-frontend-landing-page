@@ -71,6 +71,10 @@ body {
   align-items: center;
 }
 
+.text-small {
+  font-size: 0.85rem;
+}
+
 /* #endregion */
 
 
@@ -105,6 +109,7 @@ nav {
 
 nav ul {
   list-style: none;
+  margin-bottom: 0;
 }
 
 nav li {
@@ -200,6 +205,12 @@ section#ubicacion {
   max-width: 100%;
 }
 
+.destacado-info h3,
+.destacado-info p {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .star-rating {
   color: var(--color-star);
   font-size: 1.5rem;
@@ -254,20 +265,22 @@ section#ubicacion {
 }
 
 .card h3 {
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
 .card p {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
-button.btn,
+button.button-action,
 a.button-link {
   cursor: pointer;
   background-color: var(--color-primario);
   color: var(--color-white);
   font-size: 1.25rem;
+  line-height: 1.25rem;
   width: 100%;
   height: 42px;
   padding: 0 2rem;
@@ -283,7 +296,7 @@ a.button-link {
   text-align: center;
 }
 
-button.btn:hover,
+button.button-action:hover,
 a.button-link:hover {
   background-color: var(--color-terciario);
 }
@@ -361,6 +374,10 @@ a.button-link:hover {
 .direccion h3 {
   color: var(--color-primario);
   text-transform: uppercase;
+}
+
+.direccion p {
+  margin-bottom: 0;
 }
 
 /* #endregion */
@@ -550,7 +567,7 @@ textarea {
     margin: 1rem 0;
   }
 
-  button.btn,
+  button.button-action,
   a.button-link {
     font-size: 1rem;
   }
