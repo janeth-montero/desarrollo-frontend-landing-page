@@ -4,7 +4,7 @@ Bienvenido al repositorio de la landing page de Beta Residencial de desarrollos 
 Esta página es un proyecto ficticio desarrollado en HTML, CSS y Javascript como parte de la clase de Desarrollo de Frontend.
 Este proyecto se encuentra en desarrollo, por lo cual la documentacion presentada a continuacion puede describir funcionalidad incompleta o en proceso de desarrollo.
 
-## Instrucciones de Uso
+## Instrucciones de uso
 
 1. Clona este repositorio en tu máquina local usando el siguiente comando:
 
@@ -62,11 +62,12 @@ sass --style compressed scss/styles.scss css/styles.min.css
 - Sección de ubicacion del residencial.
 - Footer con formulario de contacto y detalles de contacto adicionales.
 
-## Tecnologías Utilizadas
+## Tecnologías utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
+- SASS
 
 ## Créditos
 
@@ -74,7 +75,7 @@ sass --style compressed scss/styles.scss css/styles.min.css
 - Tipografía [Google Fonts](https://fonts.google.com/specimen/Inter?query=inter)
 - Iconos de navegación de [FontAwesome](https://fontawesome.com).
 
-## Uso de Imágenes con Fines Educativos
+## Uso de imágenes con fines educativos
 
 Las imágenes utilizadas en este proyecto se emplean exclusivamente con fines educativos en el contexto de un proyecto escolar. Este proyecto forma parte de un curso de Desarrollo de Frontend y tiene como objetivo enseñar a los estudiantes habilidades relevantes en el diseño y desarrollo de sitios web.
 
@@ -91,4 +92,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 ---
 
 Proyecto desarrollado por Janeth Montero
-Contacto: janeth.montero08@gmail.com | [LinkedIn](https://www.linkedin.com/in/janeth-montero/)
+Contacto: janeth.montero@unison.mx | [LinkedIn](https://www.linkedin.com/in/janeth-montero/)
