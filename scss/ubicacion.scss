@@ -1,0 +1,39 @@
+.mapa-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--size-header));
+  overflow: hidden;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: calc(100vh - var(--size-header));
+  border: 0;
+}
+
+.mapa-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, .4);
+  color: var(--color-font);
+  font-size: 1rem;
+}
+
+.direccion {
+  background-color: var(--color-background);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.direccion h3 {
+  color: var(--color-primario);
+  text-transform: uppercase;
+}
+
+.direccion p {
+  margin-bottom: 0;
+}

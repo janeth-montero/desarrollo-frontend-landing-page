@@ -1,8 +1,16 @@
 @import 'variables';
-@import 'base.scss';
+@import 'base';
+
 @import 'buttons.scss';
 @import 'flex-layout.scss';
 @import 'secciones.scss';
 @import 'header.scss';
 @import 'footer.scss';
+
+@import 'home.scss';
+@import 'destacados.scss';
+@import 'modelos.scss';
+@import 'amenidades.scss';
+@import 'ubicacion.scss';
+
 @import 'responsive.scss';

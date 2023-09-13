@@ -1,0 +1,55 @@
+.destacados-container {
+  padding: 0 90px;
+  gap: 90px;
+}
+
+.destacado-info {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  background: var(--color-white);
+  box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+  border-radius: 3px;
+}
+
+.destacado-info img {
+  max-width: 100%;
+}
+
+.destacado-info h3,
+.destacado-info p {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.star-rating {
+  color: var(--color-star);
+  font-size: 1.5rem;
+}
+
+.clientes-comentarios {
+  flex: 1;
+  gap: 20px;
+}
+
+.comentario {
+  gap: 10px;
+  padding: 15px;
+  background-color: var(--color-terciario-extra-light);
+  border-radius: 8px;
+}
+
+.cliente img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.cliente-mensaje {
+  flex: 1;
+}
+
+.cliente-firma {
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
