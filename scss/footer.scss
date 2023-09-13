@@ -1,0 +1,43 @@
+footer {
+  background: var(--color-secundario);
+  color: var(--color-white);
+  text-align: center;
+  padding: 6rem 3rem;
+}
+
+.contacto-container {
+  width: 600px;
+  max-width: 100%;
+}
+
+.contacto-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 8px;
+  border: 1px solid var(--color-background);
+  border-radius: 3px;
+}
+
+.redes-sociales-container {
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+
+.fa-brands {
+  font-size: 2rem;
+  color: var(--color-primario);
+}
+
+.fa-brands:hover {
+  color: var(--color-terciario);
+}
+
+.fa-brands:active {
+  color: var(--color-terciario-dark);
+}

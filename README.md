@@ -28,6 +28,25 @@ npm install -g live-server
 live-server
 ```
 
+## Compilar hojas de estilo scss a css
+1. La ultima versión del proyecto **Beta Residencial Landing Page** utiliza SASS para desarrollar los estilos, por lo cual es necesario instalar SASS de manera global en el ambiente de desarrollo:
+
+```bash
+npm install -g sass
+```
+
+2. Para generar el archivo css (archivo de salida) es necesario compilar los estilos scss (archivos de entrada), para ello, en la carpeta principal del proyecto ejecutamos el comando:
+
+```bash
+sass scss/styles.scss css/styles.css
+```
+
+3. Si deseamos generar el archivo css comprimido, ejecutamos el siguiente comando, sin olvidar ajustar el nombre del archivo en el index.html.
+
+```bash
+sass --style compressed scss/styles.scss css/styles.min.css
+```
+
 ## Características
 
 - Navegación interactiva por anclaje y efectos de desplazamiento suave.
