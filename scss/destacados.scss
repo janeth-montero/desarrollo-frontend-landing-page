@@ -7,23 +7,24 @@
   flex: 1;
   text-align: center;
   padding: 2rem;
-  background: var(--color-white);
+  background: $color-white;
   box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
   border-radius: 3px;
+
+  img {
+    max-width: 100%;
+  }
+
+  h3,
+  p {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
 }
 
-.destacado-info img {
-  max-width: 100%;
-}
-
-.destacado-info h3,
-.destacado-info p {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
 
 .star-rating {
-  color: var(--color-star);
+  color: $color-star;
   font-size: 1.5rem;
 }
 
@@ -35,7 +36,7 @@
 .comentario {
   gap: 10px;
   padding: 15px;
-  background-color: var(--color-terciario-extra-light);
+  background-color: $color-terciario-extra-light;
   border-radius: 8px;
 }
 
@@ -51,5 +52,5 @@
 .cliente-firma {
   font-style: italic;
   font-weight: 600;
-  margin-top: 0.5rem;
+  margin: 0;
 }

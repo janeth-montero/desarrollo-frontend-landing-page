@@ -2,21 +2,21 @@
   height: 100vh;
   background: url("../img/home.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 .home-banner {
   gap: 1rem;
-  background-color: var(--color-primario-dark);
+  background-color: $color-primario-dark;
   opacity: 0.9;
   padding: 3rem;
-}
 
-.home-banner > h1 {
-  text-transform: uppercase;
-  font-size: 2rem;
-}
+  > h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
 
-.home-banner > h3 {
-  font-size: 1.5rem;
+  > h3 {
+    font-size: 1.5rem;
+  }
 }

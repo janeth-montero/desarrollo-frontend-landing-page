@@ -1,16 +1,16 @@
 header {
   position: fixed;
-  background: var(--color-white);
+  background: $color-white;
   width: 100%;
-  height: var(--size-header);
+  height: $size-header;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.10);
   z-index: 1;
 }
 
 #logo,
 #contacto {
-  height: var(--size-nav-item);
-  width: var(--size-nav-item);
+  height: $size-nav-item;
+  width: $size-nav-item;
   margin: 10px;
 }
 
@@ -21,27 +21,27 @@ header {
 }
 
 nav {
-  height: var(--size-nav-item);
+  height: $size-nav-item;
   font-size: 1.25rem;
-}
 
-nav ul {
-  list-style: none;
-  margin-bottom: 0;
-}
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
 
-nav li {
-  padding: 0.75rem 2rem;
-}
+  li {
+    padding: 0.75rem 2rem;
+  }
 
-nav a {
-  text-decoration: none;
-  color: var(--color-primario);
-  font-weight: 600;
+  a {
+    text-decoration: none;
+    color: $color-primario;
+    font-weight: 600;
+  }
 }
 
 nav li:hover,
 #contacto:hover {
-  background-color: var(--color-background);
+  background-color: $color-background;
   border-radius: 8px;
 }
